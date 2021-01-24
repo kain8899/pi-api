@@ -39,8 +39,8 @@ class UserCreatorRepository
             'email' => $user['email']
         ];
 
-        $sql = "INSERT INTO users SET first_name=:first_name, 
-                last_name=:last_name, 
+        $sql = "INSERT INTO users SET name=:name, 
+                lastname=:lastname, 
                 email=:email;";
 
         $this->connection->prepare($sql)->execute($row);
