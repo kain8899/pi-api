@@ -27,7 +27,7 @@ final class UserCreateAction
 
         // Transform the result into the JSON representation
         $result = [
-            'user_id' => 1
+            'user_id' => $userId
         ];
 
         // Build the HTTP response
