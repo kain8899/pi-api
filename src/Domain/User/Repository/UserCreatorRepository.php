@@ -34,8 +34,8 @@ class UserCreatorRepository
     public function insertUser(array $user): int
     {
         $row = [
-            'first_name' => $user['first_name'],
-            'last_name' => $user['last_name'],
+            'name' => $user['name'],
+            'lastname' => $user['lastname'],
             'email' => $user['email']
         ];
 
