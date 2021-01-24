@@ -61,9 +61,9 @@ final class UserCreator
 
         // Here you can also use your preferred validation library
 
-        if (empty($data['username'])) {
+        /*if (empty($data['username'])) {
             $errors['username'] = 'Input required';
-        }
+        }*/
 
         if (empty($data['email'])) {
             $errors['email'] = 'Input required';
