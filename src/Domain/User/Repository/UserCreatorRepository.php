@@ -34,15 +34,12 @@ class UserCreatorRepository
     public function insertUser(array $user): int
     {
         $row = [
-            'username' => $user['username'],
             'first_name' => $user['first_name'],
             'last_name' => $user['last_name'],
-            'email' => $user['email'],
+            'email' => $user['email']
         ];
 
-        $sql = "INSERT INTO users SET 
-                username=:username, 
-                first_name=:first_name, 
+        $sql = "INSERT INTO users SET first_name=:first_name, 
                 last_name=:last_name, 
                 email=:email;";
 
