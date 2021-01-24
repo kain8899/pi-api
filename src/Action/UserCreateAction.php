@@ -23,11 +23,11 @@ final class UserCreateAction
         $data = (array)$request->getParsedBody();
 
         // Invoke the Domain with inputs and retain the result
-        $userId = $this->userCreator->createUser($data);
+        //$userId = $this->userCreator->createUser($data);
 
         // Transform the result into the JSON representation
         $result = [
-            'user_id' => $userId
+            'user_id' => 1
         ];
 
         // Build the HTTP response
